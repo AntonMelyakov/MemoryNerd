@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MemoryNerd</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+  </head>
+  <body>
+<div class="header">
+  <img class=banner src="cards/bannerReady.jpg" alt="Memory nerd banner">
+</div>
+
+
+
+<div class="gamePanel">
+
+    <div class="fact">
+      <span class="fact-one">Nerd fact: </span>
+      <span class="fact-two"></span>
+    </div>
+
+    <div class="choseLevel">
+      <div class="buttons">
+      <span class="btn" id="easy">
+        easy
+      </span>
+
+      <span class="btn" id="normal">
+        normal
+      </span>
+
+      <span class="btn" id="hard">
+        hard
+      </span>
+      </div>
+
+    </div>
+
+    <div class="div-board">
+          <div class="board">
+          </div>
+    </div>
+
+    <div class="right-part">
+
+        <div class="showCardPanel">
+          <h3 class="text-rp">Where is this card:</h3>
+           <div class="searchedCard">
+          </div>
+        </div>
+
+        <div class="div-result">
+          <h3 class="ycr text-rp">Your current result is:</h3>
+          <h2 class="result"></h2>
+        </div>
+
+        <div class="percentResult">
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="cards.js"></script>
+<script type="text/javascript" src="nerd-fact.js"></script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="showCardPanel.js"></script>
+<script type="text/javascript" src="result.js"></script>
+<script type="text/javascript" src="gameplay.js"></script>
+  </body>
+</html>
