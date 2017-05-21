@@ -5,22 +5,18 @@ function emptyUsedNumbers() {
 }
 
 function buildBoard(howManyCards) {
-$('.card').remove();
-$('.final-message').remove();
-emptyUsedNumbers();
-createArrayCards();
+ $('.card').remove();
+ $('.final-message').remove();
+ emptyUsedNumbers();
+ createArrayCards();
 
-while (usedNumbers.length < howManyCards) {
-
-let number = randomNumber(arrayCards.length) - 1;
-let heroNumber = arrayCards[number];
-   createCard(cards[heroNumber]);
-   usedNumbers.push(heroNumber);
-   arrayCards.splice(number, 1);
-
-};
-
-
+ while (usedNumbers.length < howManyCards) {
+  let number = randomNumber(arrayCards.length) - 1;
+  let heroNumber = arrayCards[number];
+     createCard(cards[heroNumber]);
+     usedNumbers.push(heroNumber);
+     arrayCards.splice(number, 1);
+ };
 };
 
 function notInArray(theNumber, array) {
@@ -31,20 +27,16 @@ function notInArray(theNumber, array) {
       result = false;
       break;
     };
-
   };
-
   return result;
 }
 
 function randomNumber(max) {
   let result = (Math.floor(Math.random() * max) + 1);
-
   return result;
 }
 
 function createCard(hero) {
-
  $div = $('<div>', {
    id: hero,
    'class': 'card'
@@ -60,8 +52,6 @@ function createCard(hero) {
    src:"cards/card.jpg"
  })
 
-$div.append($img1, $img2);
-$board.append($div);
-
-
+ $div.append($img1, $img2);
+ $board.append($div);
 }
