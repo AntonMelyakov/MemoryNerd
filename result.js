@@ -10,13 +10,11 @@ function setResult(startPoints){
 function changeResult(points) {
 let newResult = parseInt($result[0].innerText) + points;
 setResult(newResult);
-
 };
 
 function finalResult() {
 $ycr[0].innerText = "Your final result is:"
 $result.addClass('red');
-
 }
 
 function percentResult() {
@@ -40,5 +38,4 @@ function percentResult() {
    };
 
   $percentResult[0].innerHTML = $message;
-
 }
